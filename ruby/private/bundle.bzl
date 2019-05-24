@@ -1,13 +1,13 @@
 def _get_interpreter_label(repository_ctx, ruby_sdk):
-  # TODO(yugui) Support windows as rules_nodejs does
+  # TODO(framegrace) Support windows as rules_nodejs does
   return Label("%s//:ruby.sh" % ruby_sdk)
 
 def _get_bundler_label(repository_ctx, ruby_sdk):
-  # TODO(yugui) Support windows as rules_nodejs does
+  # TODO(framegrace) Support windows as rules_nodejs does
   return Label("%s//:bundler/exe/bundler" % ruby_sdk)
 
 def _get_bundler_lib_label(repository_ctx, ruby_sdk):
-  # TODO(yugui) Support windows as rules_nodejs does
+  # TODO(framegrace) Support windows as rules_nodejs does
   return Label("%s//:bundler/lib" % ruby_sdk)
 
 def bundle_install_impl(ctx):
@@ -68,7 +68,7 @@ bundle_install = repository_rule(
         ),
 
         "_buildfile_template": attr.label(
-            default = "@com_github_yugui_rules_ruby//ruby/private:bundle_buildfile.tpl",
+            default = "@com_github_framegrace_rules_ruby//ruby/private:bundle_buildfile.tpl",
             allow_single_file = True,
         ),
     },

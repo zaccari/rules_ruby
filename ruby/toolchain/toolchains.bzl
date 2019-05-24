@@ -18,13 +18,13 @@ def _declare_toolchain_repositories(version):
         name = "org_ruby_lang_ruby_host",
     )
   else:
-    # TODO(yugui) support ruby interpereters in the current repo
-    # TODO(yugui) support installing the specified version of ruby from source
-    fail("TODO(yugui) support non-host interpreters for determinicity")
+    # TODO(framegrace) support ruby interpereters in the current repo
+    # TODO(framegrace) support installing the specified version of ruby from source
+    fail("TODO(framegrace) support non-host interpreters for determinicity")
 
 def _register_toolchains():
   native.register_toolchains(
-      "@com_github_yugui_rules_ruby//ruby/toolchain:host",
+      "@com_github_framegrace_rules_ruby//ruby/toolchain:host",
   )
 
 def ruby_register_toolchains(version="host"):
@@ -33,7 +33,7 @@ def ruby_register_toolchains(version="host"):
 def declare_toolchains():
   _ruby_toolchain(
       name = "ruby-host",
-      # TODO(yugui) Detect the right constraints for the host
+      # TODO(framegrace) Detect the right constraints for the host
       host = None,
       interpreter = "@org_ruby_lang_ruby_host//:ruby",
       bundler = "@org_ruby_lang_ruby_host//:bundler",

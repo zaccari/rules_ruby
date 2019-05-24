@@ -1,5 +1,5 @@
 load(
-  "@com_github_yugui_rules_ruby//ruby:def.bzl",
+  "@com_github_framegrace_rules_ruby//ruby:def.bzl",
   "ruby_library",
 )
 
@@ -15,8 +15,8 @@ ruby_library(
   name = "libs",
   srcs = glob(
     include = [
-      # TODO(yugui) Support other ruby engines
-      # TODO(yugui) Fix the ruby_version with the given interpter.
+      # TODO(framegrace) Support other ruby engines
+      # TODO(framegrace) Fix the ruby_version with the given interpter.
       "lib/ruby/*/gems/*/**/*",
       "lib/ruby/*/bin/**/*",
     ],

@@ -71,7 +71,7 @@ _ATTRS = {
         allow_single_file = True,
     ),
     "toolchain": attr.label(
-        default = "@com_github_yugui_rules_ruby//ruby/toolchain:ruby_sdk",
+        default = "@com_github_framegrace_rules_ruby//ruby/toolchain:ruby_sdk",
         providers = [platform_common.ToolchainInfo],
     ),
 

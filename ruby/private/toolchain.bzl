@@ -51,7 +51,7 @@ def ruby_toolchain(name, interpreter, bundler, runtime, host, init_files=[], rub
 
   native.toolchain(
       name = name,
-      toolchain_type = "@com_github_yugui_rules_ruby//ruby/toolchain:toolchain",
+      toolchain_type = "@com_github_framegrace_rules_ruby//ruby/toolchain:toolchain",
       toolchain = ":%s" % impl_name,
 #      exec_compatible_with = [host],
 #      target_compatible_with = [target],
