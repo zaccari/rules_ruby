@@ -64,8 +64,7 @@ _ATTRS = {
     "includes": attr.string_list(),
     "rubyopt": attr.string_list(),
     "data": attr.label_list(
-        allow_files = True,
-        cfg = "data",
+        allow_files = True
     ),
     "main": attr.label(
         allow_single_file = True,

@@ -56,12 +56,10 @@ bundle_install = repository_rule(
             default = "@org_ruby_lang_ruby_host",
         ),
         "gemfile": attr.label(
-            allow_single_file = True,
-            cfg = "data",
+            allow_single_file = True
         ),
         "gemfile_lock": attr.label(
-            allow_single_file = True,
-            cfg = "data",
+            allow_single_file = True
         ),
         "excludes": attr.string_list_dict(
             doc = "List of glob patterns per gem to be excluded from the library",
