@@ -112,7 +112,7 @@ def _ruby_host_runtime_impl(ctx):
   rel_paths = []
   for i, path in enumerate(paths):
     # Assuming that absolute paths start with "/".
-    # TODO(framegrace) support windows
+    # TODO(zaccari) support windows
     if path.startswith('/'):
       rel_path = path[1:]
     else:

@@ -1,13 +1,13 @@
 def _get_interpreter_label(repository_ctx, ruby_sdk):
-  # TODO(framegrace) Support windows as rules_nodejs does
+  # TODO(zaccari) Support windows as rules_nodejs does
   return Label("%s//:ruby.sh" % ruby_sdk)
 
 def _get_bundler_label(repository_ctx, ruby_sdk):
-  # TODO(framegrace) Support windows as rules_nodejs does
+  # TODO(zaccari) Support windows as rules_nodejs does
   return Label("%s//:bundler/exe/bundler" % ruby_sdk)
 
 def _get_bundler_lib_label(repository_ctx, ruby_sdk):
-  # TODO(framegrace) Support windows as rules_nodejs does
+  # TODO(zaccari) Support windows as rules_nodejs does
   return Label("%s//:bundler/lib" % ruby_sdk)
 
 def bundle_install_impl(ctx):

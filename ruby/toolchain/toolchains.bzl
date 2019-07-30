@@ -18,9 +18,9 @@ def _declare_toolchain_repositories(version):
         name = "org_ruby_lang_ruby_host",
     )
   else:
-    # TODO(framegrace) support ruby interpereters in the current repo
-    # TODO(framegrace) support installing the specified version of ruby from source
-    fail("TODO(framegrace) support non-host interpreters for determinicity")
+    # TODO(zaccari) support ruby interpereters in the current repo
+    # TODO(zaccari) support installing the specified version of ruby from source
+    fail("TODO(zaccari) support non-host interpreters for determinicity")
 
 def _register_toolchains():
   native.register_toolchains(
@@ -33,7 +33,7 @@ def ruby_register_toolchains(version="host"):
 def declare_toolchains():
   _ruby_toolchain(
       name = "ruby-host",
-      # TODO(framegrace) Detect the right constraints for the host
+      # TODO(zaccari) Detect the right constraints for the host
       host = None,
       interpreter = "@org_ruby_lang_ruby_host//:ruby",
       bundler = "@org_ruby_lang_ruby_host//:bundler",

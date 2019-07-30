@@ -15,8 +15,8 @@ ruby_library(
   name = "libs",
   srcs = glob(
     include = [
-      # TODO(framegrace) Support other ruby engines
-      # TODO(framegrace) Fix the ruby_version with the given interpter.
+      # TODO(zaccari) Support other ruby engines
+      # TODO(zaccari) Fix the ruby_version with the given interpter.
       "lib/ruby/*/gems/*/**/*",
       "lib/ruby/*/bin/**/*",
     ],
