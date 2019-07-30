@@ -73,7 +73,6 @@ _ATTRS = {
         default = "@com_github_zaccari_rules_ruby//ruby/toolchain:ruby_sdk",
         providers = [platform_common.ToolchainInfo],
     ),
-
     "_wrapper_template": attr.label(
       allow_single_file = True,
       default = "binary_wrapper.tpl",
