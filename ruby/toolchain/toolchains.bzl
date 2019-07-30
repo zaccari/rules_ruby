@@ -24,7 +24,7 @@ def _declare_toolchain_repositories(version):
 
 def _register_toolchains():
   native.register_toolchains(
-      "@com_github_framegrace_rules_ruby//ruby/toolchain:host",
+      "@com_github_zaccari_rules_ruby//ruby/toolchain:host",
   )
 
 def ruby_register_toolchains(version="host"):

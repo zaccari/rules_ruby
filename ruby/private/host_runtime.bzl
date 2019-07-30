@@ -22,7 +22,7 @@ def _rbconfig(ctx, name):
 
 BUILDFILE_CONTENT = """
 load(
-  "@com_github_framegrace_rules_ruby//ruby:def.bzl",
+  "@com_github_zaccari_rules_ruby//ruby:def.bzl",
   "ruby_library",
 )
 
@@ -136,11 +136,11 @@ ruby_host_runtime = repository_rule(
         "interpreter_path": attr.string(),
 
         "_init_loadpath_rb": attr.label(
-            default = "@com_github_framegrace_rules_ruby//:ruby/tools/init_loadpath.rb",
+            default = "@com_github_zaccari_rules_ruby//:ruby/tools/init_loadpath.rb",
             allow_single_file = True,
         ),
         "_install_bundler": attr.label(
-            default = "@com_github_framegrace_rules_ruby//ruby/private:install-bundler.rb",
+            default = "@com_github_zaccari_rules_ruby//ruby/private:install-bundler.rb",
             allow_single_file = True,
         ),
     },

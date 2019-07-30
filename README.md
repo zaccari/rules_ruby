@@ -1,5 +1,5 @@
 # Rules ruby
-[![Build Status](https://travis-ci.org/yugui/rules_ruby.svg?branch=master)](https://travis-ci.org/yugui/rules_ruby)
+[![Build Status](https://travis-ci.org/zaccari/rules_ruby.svg?branch=master)](https://travis-ci.org/zaccari/rules_ruby)
 
 Ruby rules for [Bazel](https://bazel.build).
 
@@ -12,12 +12,12 @@ Add `ruby_register_toolchains` into your `WORKSPACE` file
 
 ```python
 git_repository(
-    name = "com_github_yugui_rules_ruby",
-    remote = "https://github.com/yugui/rules_ruby.git",
+    name = "com_github_zaccari_rules_ruby",
+    remote = "https://github.com/zaccari/rules_ruby.git",
     commit = "8378a0ba19ab7c6d751c440bc016d9af76da656c",
 )
 
-load("@com_github_yugui_rules_ruby//ruby:def.bzl", "ruby_register_toolchains")
+load("@com_github_zaccari_rules_ruby//ruby:def.bzl", "ruby_register_toolchains")
 
 ruby_register_toolchains()
 ```
@@ -283,13 +283,13 @@ Example: `WORKSPACE`:
 
 ```python
 git_repository(
-    name = "com_github_yugui_rules_ruby",
-    remote = "https://github.com/yugui/rules_ruby.git",
+    name = "com_github_zaccari_rules_ruby",
+    remote = "https://github.com/zaccari/rules_ruby.git",
     commit = "8378a0ba19ab7c6d751c440bc016d9af76da656c",
 )
 
 load(
-  "@com_github_yugui_rules_ruby//ruby:def.bzl",
+  "@com_github_zaccari_rules_ruby//ruby:def.bzl",
   "ruby_register_toolchains",
   "bundle_install"
 )
@@ -350,7 +350,7 @@ bundle_install(name, gemfile, gemfile_lock)
           <p>The <code>Gemfile.lock</code> which Bundler runs with.</p>
           <p>NOTE: This rule never updates the <code>Gemfile.lock</code>. It is your responsibility to generate/update <code>Gemfile.lock</code></p>
       </td>
-    </tr> 
+    </tr>
   </tbody>
 </table>
 
@@ -360,7 +360,7 @@ bundle_install(name, gemfile, gemfile_lock)
 3. Building and releasing your gems with Bazel
 
 ## Copyright
-Copyright 2018 Yuki Yugui Sonoda
+Copyright 2019 Michael Zaccari
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

@@ -1,5 +1,5 @@
 load(
-  "@com_github_framegrace_rules_ruby//ruby:def.bzl",
+  "@com_github_zaccari_rules_ruby//ruby:def.bzl",
   "ruby_library",
 )
 

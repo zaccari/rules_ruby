@@ -66,7 +66,7 @@ bundle_install = repository_rule(
         ),
 
         "_buildfile_template": attr.label(
-            default = "@com_github_framegrace_rules_ruby//ruby/private:bundle_buildfile.tpl",
+            default = "@com_github_zaccari_rules_ruby//ruby/private:bundle_buildfile.tpl",
             allow_single_file = True,
         ),
     },
