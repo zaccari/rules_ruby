@@ -14,7 +14,7 @@ Add `ruby_register_toolchains` into your `WORKSPACE` file
 git_repository(
     name = "com_github_zaccari_rules_ruby",
     remote = "https://github.com/zaccari/rules_ruby.git",
-    commit = "2a3256adeaacc28d57e82049b295dc6fd4c77f93",
+    commit = "325b80f34fbc33b22e93d516e2434140dcd8f5d4",
 )
 
 load("@com_github_zaccari_rules_ruby//ruby:def.bzl", "ruby_register_toolchains")
@@ -285,7 +285,7 @@ Example: `WORKSPACE`:
 git_repository(
     name = "com_github_zaccari_rules_ruby",
     remote = "https://github.com/zaccari/rules_ruby.git",
-    commit = "2a3256adeaacc28d57e82049b295dc6fd4c77f93",
+    commit = "325b80f34fbc33b22e93d516e2434140dcd8f5d4",
 )
 
 load(
